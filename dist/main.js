@@ -25,8 +25,6 @@ $(".img").on("click", function(){
     alert("tt")
   })
   $("body").on("click", ".img", function() {
-    alert("hi");
-    // console.log($(this).closest(".card").find(".ingredients").closest("li").text())
-    console.log($(this).closest("div").find("ul").find("li").text())
+    alert($(this).closest("div").find("ul").find("li").text())
 
   });  
